@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>jardin-museo-maritimo</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-webcentric-component@0.1.0/dist/aframe-webcentric-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene webcentric>
+    <a-assets>
+      <img id="flecha" src="img/flecha.jpg" />
+      <img id="comenzar" src="img/comenzar.png" />
+      <img id="alternativa" src="img/alternativa.png" />
+      <img id="jardin-museo-maritimo" crossorigin="anonymous" src="img/1.jpg" />
+      <img id="infopanel-background" crossorigin="anonymous" src="img/cartel.png" />
+
+      <img id="jardin-museo-maritimo-2" src="img/2.jpg" />
+      <img id="jardin-museo-maritimo-3" src="img/3.jpg" />
+      <img id="jardin-museo-maritimo-4" src="img/4.jpg" />
+    </a-assets>
+
+
+
+    <a-entity id="jardin-museo-maritimo-01" position="0 0 0">
+      <a-sky src="#jardin-museo-maritimo"> </a-sky>
+      <a-entity class="infopanel" position="0 1.6 -1.5" look-at="[camera]" scale="1.7 1.7 1.7">
+        <a-image src="#infopanel-background" height="1" width="1"></a-image>
+        <a-text class="title"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat-bold.fnt"
+          position="0.07 0.28 0.001" width="1" value="Bienvenidos al juego" align="left" color="#000" anchor="center"
+          baseline="top" height="0.02" wrap-count="20"></a-text>
+
+        <a-text class="description" baseline="top" width="0.8"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+          position="-0.42089 0.174 0.001"
+          value="Para pasar los niveles de este juego debes contestar correctamente las preguntas" align="left"
+          color="black">
+        </a-text>
+
+        <a-link href="#cameraPos=10000,0,0" link="visualAspectEnabled:false" position="-0.039 -0.034 0.024"
+          scale="1 0.679 1.000" src="#flecha">
+          <a-image src="#comenzar" height="1" width="1" position="-0.006 -0.034 0.024" scale="1 0.282 1.000"></a-image>
+        </a-link>
+      </a-entity>
+
+    </a-entity>
+
+
+    <a-entity id="jardin-museo-maritimo-02" position="10000 0 0">
+      <a-sky src="#jardin-museo-maritimo-2"> </a-sky>
+
+      <a-entity class="infopanel" position="0.386  1.600 -3" look-at="[camera]" rotation="0 0 0 " scale="2 2 2">
+        <a-image src="#infopanel-background" height="1" width="1" scale="2 2 2"></a-image>
+        <a-text class="title"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat-bold.fnt"
+          position="-0.243 0.569 0" width="1" value="Pregunta 1" align="left" color="#000" anchor="center"
+          baseline="top" height="0.02" wrap-count="20"></a-text>
+
+        <a-text class="description" baseline="top" width="0.8"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+          position="-0.734 0.443 0.001" scale="1.623 2 1" value="¿Que es un algoritmo?" align="left" color="black">
+        </a-text>
+
+        <a-link href="#cameraPos=0,0,0" link="visualAspectEnabled:false" position="-0.079 0.230 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="a) Es un chocolate" align="left" color="#fff" anchor="center"
+            baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+
+        <a-link href="#cameraPos=20000,0,0" link="visualAspectEnabled:false" position="-0.079 0.04 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="b) Es un proceso" align="left" color="#fff" anchor="center"
+            baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+
+        <a-link href="#cameraPos=0,0,0" link="visualAspectEnabled:false" position="-0.079 -0.15 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="c) Es una cancion" align="left" color="#fff" anchor="center"
+            baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+      </a-entity>
+
+
+
+    </a-entity>
+
+    <a-entity id="jardin-museo-maritimo-02" position="20000 0 0">
+      <a-sky src="#jardin-museo-maritimo-4"> </a-sky>
+
+      <a-entity class="infopanel" position="0.386  1.600 -3" look-at="[camera]" rotation="0 0 0 " scale="2 2 2">
+        <a-image src="#infopanel-background" height="1" width="1" scale="2 2 2"></a-image>
+        <a-text class="title"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat-bold.fnt"
+          position="-0.243 0.569 0" width="1" value="Pregunta 2" align="left" color="#000" anchor="center"
+          baseline="top" height="0.02" wrap-count="20"></a-text>
+
+        <a-text class="description" baseline="top" width="0.8"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+          position="-0.734 0.443 0.001" scale="1.623 2 1" value="¿Que es un sistema?" align="left" color="black">
+        </a-text>
+
+        <a-link href="#cameraPos=0,0,0" link="visualAspectEnabled:false" position="-0.079 0.230 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="a) Es un pokemon" align="left" color="#fff" anchor="center"
+            baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+
+        <a-link href="#cameraPos=30000,0,0" link="visualAspectEnabled:false" position="-0.079 0.04 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="b) Un objeto complejo cuyas partes o componentes se relacionan"
+            align="left" color="#fff" anchor="center" baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+
+        <a-link href="#cameraPos=0,0,0" link="visualAspectEnabled:false" position="-0.079 -0.15 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="c) Un conjunto" align="left" color="#fff" anchor="center"
+            baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+      </a-entity>
+    </a-entity>
+
+    <a-entity id="outside2" position="30000 0 0">
+      <a-sky src="#jardin-museo-maritimo-3"> </a-sky>
+      <a-entity class="infopanel" position="0.386  1.600 -3" look-at="[camera]" rotation="0 0 0 " scale="2 2 2">
+        <a-image src="#infopanel-background" height="1" width="1" scale="2 2 2"></a-image>
+        <a-text class="title"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat-bold.fnt"
+          position="-0.243 0.569 0" width="1" value="Pregunta 3" align="left" color="#000" anchor="center"
+          baseline="top" height="0.02" wrap-count="20"></a-text>
+
+        <a-text class="description" baseline="top" width="0.8"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+          position="-0.734 0.443 0.001" scale="1.623 2 1" value="¿Que es un pokemon?" align="left" color="black">
+        </a-text>
+
+        <a-link href="#cameraPos=0,0,0" link="visualAspectEnabled:false" position="-0.079 0.230 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8"
+            value="a) Es una franquicia de medios que originalmente comenzó como un videojuego RPG" align="left"
+            color="#fff" anchor="center" baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+
+        <a-link href="#cameraPos=40000,0,0" link="visualAspectEnabled:false" position="-0.079 0.04 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="b) Es un animal sofisticado" align="left" color="#fff"
+            anchor="center" baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+
+        <a-link href="#cameraPos=0,0,0" link="visualAspectEnabled:false" position="-0.079 -0.15 0.024"
+          scale="1.307 0.164 1">
+          <a-image src="#alternativa"></a-image>
+          <a-text class="title"
+            font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+            position="0.178 0 0 " width="0.8" value="c) Es un poli Poket" align="left" color="#fff" anchor="center"
+            baseline="top" scale="1.623 6 1"></a-text>
+        </a-link>
+      </a-entity>
+    </a-entity>
+
+    <a-entity id="outside2" position="40000 0 0">
+      <a-sky src="#jardin-museo-maritimo-3"> </a-sky>
+      <a-entity class="infopanel" position="0.386  1.600 -3" look-at="[camera]" rotation="0 0 0 " scale="2 2 2">
+        <a-image src="#infopanel-background" height="1" width="1" scale="2 2 2"></a-image>
+        <a-text class="title"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat-bold.fnt"
+          position="-0.243 0.569 0" width="1" value="Ganaste" align="left" color="#000" anchor="center" baseline="top"
+          height="0.02" wrap-count="20"></a-text>
+
+        <a-text class="description" baseline="top" width="0.8"
+          font="https://raw.githubusercontent.com/jorgecardoso/aframe-course-resources/master/fonts/montserrat.fnt"
+          position="-0.734 0.443 0.001" scale="1.623 2 1" value="Eres un experto de conocimiento del mundo, haz click en comenzar para volver a jugar" align="left"
+          color="black">
+        </a-text>
+
+        <a-link href="#cameraPos=10000,0,0" link="visualAspectEnabled:false" position="-0.039 0.05 0.024"
+          scale="1 0.679 1.000" src="#flecha">
+          <a-image src="#comenzar" height="1" width="1" position="-0.006 -0.034 0.024" scale="1 0.282 1.000"></a-image>
+        </a-link>
+
+
+
+      </a-entity>
+    </a-entity>
+
+    <a-entity>
+      <a-camera id="camera" wasd-controls-enabled="false">
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-entity>
+
+
+  </a-scene>
+</body>
+
+</html>
